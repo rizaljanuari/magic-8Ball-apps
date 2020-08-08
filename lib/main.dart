@@ -31,9 +31,7 @@ class _MagicState extends State<Magic> {
         child: Center(
           child: GestureDetector(
             onTap: () {
-              setState(() {
-                randomAnswer();
-              });
+              setState(() => randomAnswer());
             },
             child: Image.asset('images/ball$answer.png'),
           ),
